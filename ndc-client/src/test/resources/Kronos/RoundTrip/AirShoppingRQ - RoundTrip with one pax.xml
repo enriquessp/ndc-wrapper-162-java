@@ -44,7 +44,7 @@
       <OriginDestination>
         <Departure>
           <AirportCode>LHR</AirportCode>
-          <Date>2017-08-22</Date>
+          <Date>2017-08-29</Date>
         </Departure>
         <Arrival>
           <AirportCode>BCN</AirportCode>
@@ -57,7 +57,7 @@
       <OriginDestination>
         <Departure>
           <AirportCode>BCN</AirportCode>
-          <Date>2017-08-26</Date>
+          <Date>2017-09-02</Date>
         </Departure>
         <Arrival>
           <AirportCode>LHR</AirportCode>

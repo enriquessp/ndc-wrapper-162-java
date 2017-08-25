@@ -1,299 +1,352 @@
-<?xml version="1.0" encoding="utf-8"?>
-<OrderViewRS CorrelationID="04e8b870dfdf41d3b8c06539d6bd6dcd"
-             TransactionIdentifier="04e8b870dfdf41d3b8c06539d6bd6dcd"
-             Version="IATA2016.2" xmlns="http://www.iata.org/IATA/EDIST"
-             xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <Document>
-    <Name>KRONOS NDC GATEWAY</Name>
-    <ReferenceVersion>1.0</ReferenceVersion>
-  </Document>
-  <Success/>
-  <Response>
-    <OrderViewProcessing/>
-    <Passengers>
-      <Passenger ObjectKey="SH1">
-        <PTC Quantity="1">ADT</PTC>
-        <Name>
-          <Surname>Sutar</Surname>
-          <Given>Pramod</Given>
-          <Middle>R</Middle>
-        </Name>
-        <ProfileID>191196061518881</ProfileID>
-        <Contacts>
-          <Contact>
-            <AddressContact>
-              <Street>Parsik Road</Street>
-              <PO_Box>0</PO_Box>
-              <CityName>BOM</CityName>
-              <PostalCode>400605</PostalCode>
-              <County>IN</County>
-            </AddressContact>
-          </Contact>
-          <Contact>
-            <PhoneContact>
-              <Number>9664597377</Number>
-            </PhoneContact>
-          </Contact>
-          <Contact>
-            <EmailContact>
-              <Address>Pramod@gmail.com</Address>
-            </EmailContact>
-          </Contact>
-        </Contacts>
-        <Gender>Male</Gender>
-      </Passenger>
-    </Passengers>
-    <Order>
-      <OrderID Owner="C9">A12345RA8</OrderID>
-      <BookingReferences>
-        <BookingReference>
-          <ID>370730</ID>
-          <AirlineID>C9</AirlineID>
-        </BookingReference>
-      </BookingReferences>
-      <TotalOrderPrice>
-        <DetailCurrencyPrice>
-          <Total Code="EUR">287.50</Total>
-          <Taxes>
-            <Total>321.90</Total>
-          </Taxes>
-        </DetailCurrencyPrice>
-      </TotalOrderPrice>
-      <OrderItems>
-        <OrderItem>
-          <OrderItemID Owner="C9">1_1</OrderItemID>
-          <FlightItem>
-            <Price>
-              <BaseAmount Code="EUR">287.50</BaseAmount>
-              <Taxes>
-                <Total Code="EUR">321.90</Total>
-              </Taxes>
-            </Price>
-            <OriginDestination refs="OD1">
-              <Flight refs="SEG_ARNFRA_1">
-                <Departure>
-                  <AirportCode>ARN</AirportCode>
-                  <Date>2017-08-05</Date>
-                  <Time>07:50</Time>
-                </Departure>
-                <Arrival>
-                  <AirportCode>FRA</AirportCode>
-                  <Date>2017-08-05</Date>
-                  <Time>09:54</Time>
-                </Arrival>
-                <MarketingCarrier>
-                  <AirlineID>C9</AirlineID>
-                  <FlightNumber>013</FlightNumber>
-                </MarketingCarrier>
-                <OperatingCarrier>
-                  <AirlineID>C9</AirlineID>
-                  <FlightNumber>013</FlightNumber>
-                </OperatingCarrier>
-                <Equipment>
-                  <AircraftCode>737</AircraftCode>
-                </Equipment>
-                <Details>
-                  <FlightDuration>
-                    <Value>P0DT2H4M0S</Value>
-                  </FlightDuration>
-                </Details>
-              </Flight>
-              <Flight refs="SEG_FRARIX_2">
-                <Departure>
-                  <AirportCode>FRA</AirportCode>
-                  <Date>2017-08-05</Date>
-                  <Time>17:40</Time>
-                </Departure>
-                <Arrival>
-                  <AirportCode>RIX</AirportCode>
-                  <Date>2017-08-05</Date>
-                  <Time>20:47</Time>
-                </Arrival>
-                <MarketingCarrier>
-                  <AirlineID>C9</AirlineID>
-                  <FlightNumber>207</FlightNumber>
-                </MarketingCarrier>
-                <OperatingCarrier>
-                  <AirlineID>C9</AirlineID>
-                  <FlightNumber>207</FlightNumber>
-                </OperatingCarrier>
-                <Equipment>
-                  <AircraftCode>319</AircraftCode>
-                </Equipment>
-                <Details>
-                  <FlightDuration>
-                    <Value>P0DT2H7M0S</Value>
-                  </FlightDuration>
-                </Details>
-              </Flight>
-            </OriginDestination>
-          </FlightItem>
-          <Associations>
-            <Passengers>
-              <PassengerReferences>SH1</PassengerReferences>
-            </Passengers>
-            <AssociatedService>
-              <ServiceReferences>SV1009 SV1011</ServiceReferences>
-            </AssociatedService>
-          </Associations>
-        </OrderItem>
-      </OrderItems>
-    </Order>
-    <Payments>
-      <Payment>
-        <Type>
-          <Code>CC</Code>
-          <Definition>Credit Card</Definition>
-        </Type>
-        <Method>
-          <PaymentCardMethod>
-            <MaskedCardNumber>XXXXXXXXXXXX4444</MaskedCardNumber>
-            <EffectiveExpireDate>
-              <Effective>0322</Effective>
-            </EffectiveExpireDate>
-          </PaymentCardMethod>
-        </Method>
-        <Amount Code="EUR" Taxable="true">601.00</Amount>
-      </Payment>
-    </Payments>
-    <TicketDocInfos>
-      <TicketDocInfo>
-        <TicketDocument>
-          <TicketDocNbr>6957877543</TicketDocNbr>
-          <Type>
-            <Code>702</Code>
-            <Definition>eTicket</Definition>
-          </Type>
-          <NumberofBooklets>1</NumberofBooklets>
-          <DateOfIssue>2017-04-28</DateOfIssue>
-        </TicketDocument>
-        <PassengerReference>SH1</PassengerReference>
-      </TicketDocInfo>
-    </TicketDocInfos>
-    <DataLists>
-      <FlightSegmentList>
-        <FlightSegment SegmentKey="SEG_ARNFRA_1">
-          <Departure>
-            <AirportCode>ARN</AirportCode>
-            <Date>2017-08-05</Date>
-            <Time>07:50</Time>
-            <AirportName>Stockholm Arlanda Airport</AirportName>
-          </Departure>
-          <Arrival>
-            <AirportCode>FRA</AirportCode>
-            <Date>2017-08-05</Date>
-            <Time>09:54</Time>
-            <AirportName>Frankfurt Airport</AirportName>
-          </Arrival>
-          <MarketingCarrier>
-            <AirlineID>C9</AirlineID>
-            <FlightNumber>013</FlightNumber>
-          </MarketingCarrier>
-          <OperatingCarrier>
-            <AirlineID>C9</AirlineID>
-            <FlightNumber>013</FlightNumber>
-          </OperatingCarrier>
-          <Equipment>
-            <AircraftCode>737</AircraftCode>
-            <Name>B737</Name>
-          </Equipment>
-          <FlightDetail>
-            <FlightDuration>
-              <Value>P0DT2H4M0S</Value>
-            </FlightDuration>
-          </FlightDetail>
-        </FlightSegment>
-        <FlightSegment SegmentKey="SEG_FRARIX_2">
-          <Departure>
-            <AirportCode>FRA</AirportCode>
-            <Date>2017-08-05</Date>
-            <Time>17:40</Time>
-            <AirportName>Frankfurt Airport</AirportName>
-          </Departure>
-          <Arrival>
-            <AirportCode>RIX</AirportCode>
-            <Date>2017-08-05</Date>
-            <Time>20:47</Time>
-            <AirportName>Riga International Airport</AirportName>
-          </Arrival>
-          <MarketingCarrier>
-            <AirlineID>C9</AirlineID>
-            <FlightNumber>207</FlightNumber>
-          </MarketingCarrier>
-          <OperatingCarrier>
-            <AirlineID>C9</AirlineID>
-            <FlightNumber>207</FlightNumber>
-          </OperatingCarrier>
-          <Equipment>
-            <AircraftCode>319</AircraftCode>
-            <Name>A319</Name>
-          </Equipment>
-          <FlightDetail>
-            <FlightDuration>
-              <Value>P0DT2H7M0S</Value>
-            </FlightDuration>
-          </FlightDetail>
-        </FlightSegment>
-      </FlightSegmentList>
-      <FlightList>
-        <Flight FlightKey="FL_ARNRIX_1">
-          <Journey>
-            <Time>P0DT11H57M0S</Time>
-          </Journey>
-          <SegmentReferences>SEG_ARNFRA_1 SEG_FRARIX_2</SegmentReferences>
-        </Flight>
-      </FlightList>
-      <OriginDestinationList>
-        <OriginDestination OriginDestinationKey="OD1">
-          <DepartureCode>ARN</DepartureCode>
-          <ArrivalCode>RIX</ArrivalCode>
-          <FlightReferences>FL_ARNRIX_1</FlightReferences>
-        </OriginDestination>
-      </OriginDestinationList>
-      <ServiceList>
-        <Service ObjectKey="SV1011">
-          <ServiceID Owner="C9">1011</ServiceID>
-          <Name>Lounge Pass</Name>
-          <Descriptions>
-            <Description>
-              <Text>Escape the crowds and find a quiet space to work or relax</Text>
-            </Description>
-          </Descriptions>
-          <Price>
-            <Total>35</Total>
-            <PassengerReferences>SH1</PassengerReferences>
-          </Price>
-          <Associations>
-            <Traveler>
-              <TravelerReferences>SH1</TravelerReferences>
-            </Traveler>
-            <Flight>
-              <SegmentReferences>SEG_ARNFRA_1 SEG_FRARIX_2</SegmentReferences>
-            </Flight>
-          </Associations>
-        </Service>
-        <Service ObjectKey="SV1009">
-          <ServiceID Owner="C9">1009</ServiceID>
-          <Name>Inflight Wi-Fi</Name>
-          <Descriptions>
-            <Description>
-              <Text>Stay connected using any Wi-Fi enabled device</Text>
-            </Description>
-          </Descriptions>
-          <Price>
-            <Total>19</Total>
-            <PassengerReferences>SH1</PassengerReferences>
-          </Price>
-          <Associations>
-            <Traveler>
-              <TravelerReferences>SH1</TravelerReferences>
-            </Traveler>
-            <Flight>
-              <SegmentReferences>SEG_ARNFRA_1 SEG_FRARIX_2</SegmentReferences>
-            </Flight>
-          </Associations>
-        </Service>
-      </ServiceList>
-    </DataLists>
-  </Response>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<OrderViewRS TimeStamp="2017-08-22T15:44:37.362+03:00" Version="IATA2016.2"
+             TransactionIdentifier="d7350b82332a487d9bc6501d7b581e2f" xmlns="http://www.iata.org/IATA/EDIST">
+    <Document>
+        <Name>KRONOS NDC GATEWAY</Name>
+        <ReferenceVersion>20170822_152801</ReferenceVersion>
+    </Document>
+    <Success/>
+    <Response>
+        <OrderViewProcessing/>
+        <Passengers/>
+        <Order>
+            <OrderID Owner="C9">D12XH5</OrderID>
+            <BookingReferences>
+                <BookingReference>
+                    <ID>BRD12X</ID>
+                    <OtherID>H5_1_SH1</OtherID>
+                </BookingReference>
+            </BookingReferences>
+            <TotalOrderPrice>
+                <DetailCurrencyPrice>
+                    <Total Code="USD">667.66</Total>
+                    <Taxes>
+                        <Total>277.66</Total>
+                    </Taxes>
+                </DetailCurrencyPrice>
+            </TotalOrderPrice>
+            <OrderItems>
+                <OrderItem>
+                    <OrderItemID Owner="C9" OwnerType="ORA">ORDERITEM1</OrderItemID>
+                    <OtherItem refs="SEG_BCNFRA_1 SEG_CDGBCN_1">
+                        <Price>
+                            <DetailCurrencyPrice>
+                                <Total Taxable="true" Code="USD">667.66</Total>
+                                <Taxes>
+                                    <Total>277.66</Total>
+                                </Taxes>
+                            </DetailCurrencyPrice>
+                        </Price>
+                    </OtherItem>
+                    <Associations>
+                        <Passengers>
+                            <PassengerReferences>SH1</PassengerReferences>
+                        </Passengers>
+                        <IncludedService>
+                            <ServiceReferences>SV_1012_ALL SV_1011_ALL SV_1013_ALL SV_1009_ALL SV_1010_ALL SV_1014_ALL
+                                SV_1023_ALL
+                            </ServiceReferences>
+                        </IncludedService>
+                    </Associations>
+                </OrderItem>
+            </OrderItems>
+        </Order>
+        <Payments>
+            <Payment>
+                <Method>
+                    <PaymentCardMethod>
+                        <CardType>CREDIT</CardType>
+                        <CardCode>VI</CardCode>
+                        <MaskedCardNumber>XXXXXXXXXXXX4444</MaskedCardNumber>
+                        <CardHolderName>WERNHER VON BRAUN</CardHolderName>
+                        <EffectiveExpireDate>
+                            <Effective>0322</Effective>
+                            <Expiration>1022</Expiration>
+                        </EffectiveExpireDate>
+                    </PaymentCardMethod>
+                </Method>
+                <Amount>667.66</Amount>
+            </Payment>
+        </Payments>
+        <DataLists>
+            <RecognizedTravelerList>
+                <RecognizedTraveler ObjectKey="SH1">
+                    <PTC>ADT</PTC>
+                    <Name>
+                        <Surname>Yadav</Surname>
+                        <Given>Mithalesh</Given>
+                        <Middle>Ignatius</Middle>
+                    </Name>
+                    <Gender>Male</Gender>
+                    <Contacts>
+                        <Contact>
+                            <EmailContact>
+                                <Address>mithalesh@jrtechnologies.com</Address>
+                            </EmailContact>
+                        </Contact>
+                    </Contacts>
+                </RecognizedTraveler>
+            </RecognizedTravelerList>
+            <FlightSegmentList>
+                <FlightSegment SegmentKey="SEG_CDGBCN_1">
+                    <Departure>
+                        <AirportCode>CDG</AirportCode>
+                        <Date>2017-08-30</Date>
+                        <Time>07:50</Time>
+                        <AirportName>Charles de Gaulle Airport</AirportName>
+                    </Departure>
+                    <Arrival>
+                        <AirportCode>BCN</AirportCode>
+                        <Date>2017-08-30</Date>
+                        <Time>09:27</Time>
+                        <AirportName>Barcelona–El Prat Airport</AirportName>
+                    </Arrival>
+                    <MarketingCarrier>
+                        <AirlineID>C9</AirlineID>
+                        <FlightNumber>050</FlightNumber>
+                    </MarketingCarrier>
+                    <OperatingCarrier>
+                        <AirlineID>C9</AirlineID>
+                        <FlightNumber>050</FlightNumber>
+                    </OperatingCarrier>
+                    <Equipment>
+                        <AircraftCode>320</AircraftCode>
+                        <Name>320</Name>
+                    </Equipment>
+                    <FlightDetail>
+                        <FlightDuration>
+                            <Value>P0DT1H37M0S</Value>
+                        </FlightDuration>
+                    </FlightDetail>
+                </FlightSegment>
+                <FlightSegment SegmentKey="SEG_BCNFRA_1">
+                    <Departure>
+                        <AirportCode>BCN</AirportCode>
+                        <Date>2017-08-30</Date>
+                        <Time>19:50</Time>
+                        <AirportName>Barcelona–El Prat Airport</AirportName>
+                    </Departure>
+                    <Arrival>
+                        <AirportCode>FRA</AirportCode>
+                        <Date>2017-08-30</Date>
+                        <Time>21:45</Time>
+                        <AirportName>Frankfurt Airport</AirportName>
+                    </Arrival>
+                    <MarketingCarrier>
+                        <AirlineID>C9</AirlineID>
+                        <FlightNumber>067</FlightNumber>
+                    </MarketingCarrier>
+                    <OperatingCarrier>
+                        <AirlineID>C9</AirlineID>
+                        <FlightNumber>067</FlightNumber>
+                    </OperatingCarrier>
+                    <Equipment>
+                        <AircraftCode>319</AircraftCode>
+                        <Name>319</Name>
+                    </Equipment>
+                    <FlightDetail>
+                        <FlightDuration>
+                            <Value>P0DT1H55M0S</Value>
+                        </FlightDuration>
+                    </FlightDetail>
+                </FlightSegment>
+            </FlightSegmentList>
+            <FlightList>
+                <Flight FlightKey="FL_CDGBCN">
+                    <Journey>
+                        <Time>P0DT1H37M0S</Time>
+                    </Journey>
+                    <SegmentReferences>SEG_CDGBCN_1</SegmentReferences>
+                </Flight>
+                <Flight FlightKey="FL_BCNFRA">
+                    <Journey>
+                        <Time>P0DT1H55M0S</Time>
+                    </Journey>
+                    <SegmentReferences>SEG_BCNFRA_1</SegmentReferences>
+                </Flight>
+            </FlightList>
+            <OriginDestinationList>
+                <OriginDestination OriginDestinationKey="CDGBCN">
+                    <DepartureCode>CDG</DepartureCode>
+                    <ArrivalCode>BCN</ArrivalCode>
+                    <FlightReferences>FL_CDGBCN</FlightReferences>
+                </OriginDestination>
+                <OriginDestination OriginDestinationKey="BCNFRA">
+                    <DepartureCode>BCN</DepartureCode>
+                    <ArrivalCode>FRA</ArrivalCode>
+                    <FlightReferences>FL_BCNFRA</FlightReferences>
+                </OriginDestination>
+            </OriginDestinationList>
+            <ServiceList>
+                <Service ObjectKey="SV_1014_ALL">
+                    <ServiceID Owner="C9">SV_1014_ALL</ServiceID>
+                    <Name>Advanced seat selection</Name>
+                    <Encoding>
+                        <Code>SET</Code>
+                    </Encoding>
+                    <Descriptions>
+                        <Description>
+                            <Text>A convenient option that lets you reserve your preferred seat</Text>
+                        </Description>
+                    </Descriptions>
+                    <Price>
+                        <Total>0.00</Total>
+                        <PassengerReferences>SH1</PassengerReferences>
+                    </Price>
+                    <Associations>
+                        <Traveler>
+                            <TravelerReferences>SH1</TravelerReferences>
+                        </Traveler>
+                        <Flight>
+                            <SegmentReferences>SEG_CDGBCN_1 SEG_BCNFRA_1</SegmentReferences>
+                        </Flight>
+                    </Associations>
+                </Service>
+                <Service ObjectKey="SV_1009_ALL">
+                    <ServiceID Owner="C9">SV_1009_ALL</ServiceID>
+                    <Name>Inflight Wi-Fi</Name>
+                    <Encoding>
+                        <Code>SET</Code>
+                    </Encoding>
+                    <Descriptions>
+                        <Description>
+                            <Text>Stay connected using any Wi-Fi enabled device</Text>
+                        </Description>
+                    </Descriptions>
+                    <Price>
+                        <Total>0.00</Total>
+                        <PassengerReferences>SH1</PassengerReferences>
+                    </Price>
+                    <Associations>
+                        <Traveler>
+                            <TravelerReferences>SH1</TravelerReferences>
+                        </Traveler>
+                        <Flight>
+                            <SegmentReferences>SEG_CDGBCN_1 SEG_BCNFRA_1</SegmentReferences>
+                        </Flight>
+                    </Associations>
+                </Service>
+                <Service ObjectKey="SV_1010_ALL">
+                    <ServiceID Owner="C9">SV_1010_ALL</ServiceID>
+                    <Name>2nd Bag</Name>
+                    <Encoding>
+                        <Code>SET</Code>
+                    </Encoding>
+                    <Descriptions>
+                        <Description>
+                            <Text>Second bag</Text>
+                        </Description>
+                    </Descriptions>
+                    <Price>
+                        <Total>0.00</Total>
+                        <PassengerReferences>SH1</PassengerReferences>
+                    </Price>
+                    <Associations>
+                        <Traveler>
+                            <TravelerReferences>SH1</TravelerReferences>
+                        </Traveler>
+                        <Flight>
+                            <SegmentReferences>SEG_CDGBCN_1 SEG_BCNFRA_1</SegmentReferences>
+                        </Flight>
+                    </Associations>
+                </Service>
+                <Service ObjectKey="SV_1023_ALL">
+                    <ServiceID Owner="C9">SV_1023_ALL</ServiceID>
+                    <Name>1st Bag</Name>
+                    <Encoding>
+                        <Code>SET</Code>
+                    </Encoding>
+                    <Descriptions>
+                        <Description>
+                            <Text>Do not get caught out at the airport</Text>
+                        </Description>
+                    </Descriptions>
+                    <Price>
+                        <Total>0.00</Total>
+                        <PassengerReferences>SH1</PassengerReferences>
+                    </Price>
+                    <Associations>
+                        <Traveler>
+                            <TravelerReferences>SH1</TravelerReferences>
+                        </Traveler>
+                        <Flight>
+                            <SegmentReferences>SEG_CDGBCN_1 SEG_BCNFRA_1</SegmentReferences>
+                        </Flight>
+                    </Associations>
+                </Service>
+                <Service ObjectKey="SV_1012_ALL">
+                    <ServiceID Owner="C9">SV_1012_ALL</ServiceID>
+                    <Name>Vegetarian Meal</Name>
+                    <Encoding>
+                        <Code>SET</Code>
+                    </Encoding>
+                    <Descriptions>
+                        <Description>
+                            <Text>Vegetarian meal flavoured with spices from Indian sub-continent</Text>
+                        </Description>
+                    </Descriptions>
+                    <Price>
+                        <Total>0.00</Total>
+                        <PassengerReferences>SH1</PassengerReferences>
+                    </Price>
+                    <Associations>
+                        <Traveler>
+                            <TravelerReferences>SH1</TravelerReferences>
+                        </Traveler>
+                        <Flight>
+                            <SegmentReferences>SEG_CDGBCN_1 SEG_BCNFRA_1</SegmentReferences>
+                        </Flight>
+                    </Associations>
+                </Service>
+                <Service ObjectKey="SV_1011_ALL">
+                    <ServiceID Owner="C9">SV_1011_ALL</ServiceID>
+                    <Name>Lounge Pass</Name>
+                    <Encoding>
+                        <Code>SET</Code>
+                    </Encoding>
+                    <Descriptions>
+                        <Description>
+                            <Text>Escape the crowds and find a quiet space to work or relax</Text>
+                        </Description>
+                    </Descriptions>
+                    <Price>
+                        <Total>0.00</Total>
+                        <PassengerReferences>SH1</PassengerReferences>
+                    </Price>
+                    <Associations>
+                        <Traveler>
+                            <TravelerReferences>SH1</TravelerReferences>
+                        </Traveler>
+                        <Flight>
+                            <SegmentReferences>SEG_CDGBCN_1 SEG_BCNFRA_1</SegmentReferences>
+                        </Flight>
+                    </Associations>
+                </Service>
+                <Service ObjectKey="SV_1013_ALL">
+                    <ServiceID Owner="C9">SV_1013_ALL</ServiceID>
+                    <Name>Muslim Meal</Name>
+                    <Encoding>
+                        <Code>SET</Code>
+                    </Encoding>
+                    <Descriptions>
+                        <Description>
+                            <Text>*Halal* meal prepared according to Islamic pinciples</Text>
+                        </Description>
+                    </Descriptions>
+                    <Price>
+                        <Total>0.00</Total>
+                        <PassengerReferences>SH1</PassengerReferences>
+                    </Price>
+                    <Associations>
+                        <Traveler>
+                            <TravelerReferences>SH1</TravelerReferences>
+                        </Traveler>
+                        <Flight>
+                            <SegmentReferences>SEG_CDGBCN_1 SEG_BCNFRA_1</SegmentReferences>
+                        </Flight>
+                    </Associations>
+                </Service>
+            </ServiceList>
+        </DataLists>
+    </Response>
 </OrderViewRS>

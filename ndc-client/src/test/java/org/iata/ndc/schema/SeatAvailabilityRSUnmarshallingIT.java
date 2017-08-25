@@ -20,6 +20,8 @@ public class SeatAvailabilityRSUnmarshallingIT extends AbstractUnmarshaller<Seat
 	public static Collection<String[]> sampleFiles() {
 		return Arrays.asList(new String[][] {
 			{"/Kronos/OneWay/SeatAvailabilityRS- OneWay.xml", "ARN"},
+			{"/Kronos/RoundTrip/SeatAvailabilityRS.xml", "LHR"}
+
 		});
 	}
 

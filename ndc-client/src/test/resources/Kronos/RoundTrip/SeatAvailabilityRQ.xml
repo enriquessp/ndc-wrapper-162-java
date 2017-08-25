@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<FlightPriceRQ EchoToken="{{$guid}}" Version="IATA2016.2" xmlns="http://www.iata.org/IATA/EDIST">
+<SeatAvailabilityRQ xmlns="http://www.iata.org/IATA/EDIST" EchoToken="8fdb1c621a7a4454aa3360556e7784d5" TimeStamp="2015-12-10T12:39:00Z" Version="IATA2016.2" Target="Test" PrimaryLangID="en" AltLangID="en" RetransmissionIndicator="false" AsynchronousAllowedInd="false" TransactionIdentifier="a" SequenceNmbr="201" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.iata.org/IATA/EDIST file:///C:/Users/W/Desktop/16_2%20schemas_EDIST/SeatAvailabilityRQ.xsd">
 	<Document>
+		<Name>JRT NDC GATEWAY</Name>
 		<ReferenceVersion>1.0</ReferenceVersion>
 	</Document>
 	<Party>
@@ -19,14 +20,19 @@
 	</Party>
 	<Travelers>
 		<Traveler>
-			<AnonymousTraveler ObjectKey="SH1">
-				<PTC Quantity="1">ADT</PTC>
+			<AnonymousTraveler>
+				<PTC>ADT</PTC>
 			</AnonymousTraveler>
 		</Traveler>
 	</Travelers>
 	<Query>
 		<OriginDestination>
-			<Flight>
+			<OriginDestinationReferences>OD1 OD2</OriginDestinationReferences>
+		</OriginDestination>
+	</Query>
+	<DataLists>
+		<FlightSegmentList>
+			<FlightSegment SegmentKey="SEG1">
 				<Departure>
 					<AirportCode>LHR</AirportCode>
 					<Date>2017-08-29</Date>
@@ -50,10 +56,8 @@
 				<ClassOfService>
 					<Code>C</Code>
 				</ClassOfService>
-			</Flight>
-		</OriginDestination>
-		<OriginDestination>
-			<Flight>
+			</FlightSegment>
+			<FlightSegment SegmentKey="SEG2">
 				<Departure>
 					<AirportCode>BCN</AirportCode>
 					<Date>2017-08-30</Date>
@@ -74,10 +78,36 @@
 					<AirlineID>C9</AirlineID>
 					<FlightNumber>049</FlightNumber>
 				</OperatingCarrier>
-				<ClassOfService>
-					<Code>C</Code>
-				</ClassOfService>
+				<Equipment>
+					<AircraftCode>320</AircraftCode>
+					<Name>A320</Name>
+				</Equipment>
+				<FlightDetail>
+					<FlightDuration>
+						<Value>P0DT1H58M0S</Value>
+					</FlightDuration>
+				</FlightDetail>
+			</FlightSegment>
+		</FlightSegmentList>
+		<FlightList>
+			<Flight FlightKey="FL1">
+				<SegmentReferences>SEG1</SegmentReferences>
 			</Flight>
-		</OriginDestination>
-	</Query>
-</FlightPriceRQ>
+			<Flight FlightKey="FL2">
+				<SegmentReferences>SEG2</SegmentReferences>
+			</Flight>
+		</FlightList>
+		<OriginDestinationList>
+			<OriginDestination OriginDestinationKey="OD1">
+				<DepartureCode>LHR</DepartureCode>
+				<ArrivalCode>BCN</ArrivalCode>
+				<FlightReferences>FL1</FlightReferences>
+			</OriginDestination>
+			<OriginDestination OriginDestinationKey="OD2">
+				<DepartureCode>BCN</DepartureCode>
+				<ArrivalCode>LHR</ArrivalCode>
+				<FlightReferences>FL2</FlightReferences>
+			</OriginDestination>
+		</OriginDestinationList>
+	</DataLists>
+</SeatAvailabilityRQ>

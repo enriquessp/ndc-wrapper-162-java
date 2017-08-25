@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.iata.ndc</groupId>
   <artifactId>ndc-parent-pom</artifactId>
-  <version>0.1.5-SNAPSHOT</version>
+  <version>0.1.6-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>NDC Client parent POM</name>
   <description>Parent pom for ndc-java-sdk</description>
@@ -31,7 +31,7 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <!--<api.key>insert your api key here or specify system property when running integration tests</api.key>-->
-    <test.server.url>http://iata.api.mashery.com/athena/ndc162api</test.server.url>
+    <test.server.url>http://iata.api.mashery.com/kronos/api</test.server.url>
 
   </properties>
 
